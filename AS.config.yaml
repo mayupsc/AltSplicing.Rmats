@@ -1,0 +1,45 @@
+species: Solanum Lycopersicum
+genomes: SL2.50
+seq_info:
+  type: Alternative Splicing
+  stranded: yes
+  mode: PE
+  replicate: 2
+
+path: /home/galaxy/CNR_RNA_Seq/fastq/
+
+conda_path: /home/galaxy/miniconda2/envs/gmatic/bin/
+adapter: /home/galaxy/miniconda2/envs/gmatic/share/trimmomatic/adapters/TruSeq3-PE-2.fa
+samples:
+  #- AB
+  #- AG
+  #- AR
+  #- GB
+  #- GG
+  #- GR
+ # - eB1
+# - eB2
+# - eG
+# - eR1
+# - eR2
+  - WT_G1
+  - WT_G2
+  - WT_R1
+  - WT_R2
+
+groups:
+  - WT_G
+  - WT_G
+  - WT_R
+  - WT_R
+
+script_path: /home/galaxy/CNR_RNA_Seq/script
+gtf: /home/galaxy/genome/SL2.5/Solanum_lycopersicum.SL2.50.40.gtf
+star_index: /home/galaxy/genome/SL2.5/STAR/
+
+forward_adapter: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+reverse_adapter: CACTGACCTCAAGTCTGCACACGAGAAGGCTAGA
+cpu: 30
+strandness_hisat2: RF ## R (SE); RF (PE)
+strandness_htseq: reverse
+index: /home/galaxy/genome/SL2.5/hisat2index/SL2.5
