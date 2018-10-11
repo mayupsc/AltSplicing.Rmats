@@ -1,0 +1,1 @@
+rmats2sashimiplot --b1 bam/WT_G1.same.length.bam,bam/WT_G2.same.length.bam --b2 bam/WT_R1.same.length.bam,bam/WT_R2.same.length.bam -c SL2.50ch02:-:42743081:42745257:/home/galaxy/genome/SL2.5/ITAG2.4_gene_models.gff3 --l1 WT.G1 --l2 WT.G2 --exon_s 1 --intron_s 5 -o test_coordinate_output

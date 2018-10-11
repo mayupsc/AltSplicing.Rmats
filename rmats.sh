@@ -1,0 +1,1 @@
+python ~/biosoft/rMATS.4.0.2/rMATS-turbo-Linux-UCS4/rmats.py --b1 WT_G.txt --b2 WT_R.txt --gtf ~/genome/SL2.5/Solanum_lycopersicum.SL2.50.40.gtf --od rmats/ -t paired --readLength 140 --cstat 0.0001 --libType fr-firststrand
